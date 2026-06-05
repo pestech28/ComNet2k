@@ -8,5 +8,8 @@
 5. Run ``` sudo ./install.sh ```
 
 # Rules to be added as a pass through
-1. The site must use Frutiger Aero, a sub aethetic of Frutiger Aero or a 2006-2011 flash animation design
-2. The website must work on either IE 7/8/9 Firefox 3/4/5/6 Safari 3/4 or Chrome 1/2/3/4/5
+1. The site must use Y2k, a sub aethetic of Y2k web design
+2. The website must work on either IE 6 Firefox 1/2/3 Safari or 1/2
+
+# Credits
+This project is a fork of [Frutinet 0.3.0](https://github.com/pestech28/Frutinet/tree/0.3.0)

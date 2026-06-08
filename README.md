@@ -8,8 +8,8 @@
 5. Run ``` sudo ./install.sh ```
 
 # Rules to be added as a pass through
-1. The site must use Y2k, a sub aethetic of Y2k web design
-2. The website must work on either IE 6 Firefox 1/2/3 Safari or 1/2
+1. The site must use Y2K or Frutiger Aero, or a sub aethetic of Y2K or Frutiger Aero web design
+2. The website must work on either IE 6/7/8 Firefox 1/2/3/4/5/6 Safari or 1/2/3 Chrome 1
 
 # Credits
 This project is a fork of [Frutinet 0.3.0](https://github.com/pestech28/Frutinet/tree/0.3.0)

@@ -14,7 +14,10 @@
 
 # Credits
 This project is a fork of [Frutinet 0.3.0](https://github.com/pestech28/Frutinet/tree/0.3.0)
+
 Websites restored come from [The Wayback Machine](https://web.archive.org)
 
 # Restore sites source
 [Nintendo](https://web.archive.org/web/20061222035429/http://www.nintendo.com/home)
+
+[Apple](https://web.archive.org/web/20040508152412/http://www.apple.com/)

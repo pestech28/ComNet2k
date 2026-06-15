@@ -21,3 +21,5 @@ Websites restored come from [The Wayback Machine](https://web.archive.org)
 [Nintendo](https://web.archive.org/web/20061222035429/http://www.nintendo.com/home)
 
 [Apple](https://web.archive.org/web/20040508152412/http://www.apple.com/)
+
+[Microsoft](https://web.archive.org/web/20040828024032/http://www.microsoft.com/)

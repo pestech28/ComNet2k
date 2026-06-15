@@ -4,6 +4,8 @@ sudo apt install tinyproxy -y
 sudo apt install apache2 -y
 sudo ufw allow 8888/tcp
 sudo ufw allow 5190/tcp
+sudo ufw allow 1863/tcp
+sudo ufw allow 1864/tcp
 sudo cp tinyproxy/tinyproxy.conf /etc/tinyproxy -f
 sudo cp tinyproxy/filter /etc/tinyproxy -f
 sudo tar -xvzf www/front.tar.gz --overwrite -C /var/www/html
@@ -25,5 +27,10 @@ sudo cp sites/apple.conf /etc/apache2/sites-available/ -f
 sudo a2ensite apple.conf
 echo "127.0.0.1 apple.com" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/restore/apple.tar.gz --overwrite -C /var/www/html/restore/apple
+sudo mkdir /var/www/html/restore/microsoft
+sudo cp sites/microsoft.conf /etc/apache2/sites-available/ -f
+sudo a2ensite microsoft.conf
+echo "127.0.0.1 microsoft.com" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/restore/microsoft.tar.gz --overwrite -C /var/www/html/restore/microsoft
 sudo systemctl reload apache2
 sudo systemctl restart tinyproxy

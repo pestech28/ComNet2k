@@ -6,7 +6,7 @@
 3. Open in terminal
 4. Run ``` chmod +x ./install.sh ```
 5. Run ``` sudo ./install.sh ```
-6. in a sepperate ttyl or terminal window run ``` cd /var/www/html/live/headlines | sudo python3 headlines.py ```
+6. in a seperate ttyl or terminal window run ``` cd /var/www/html/live/headlines | sudo python3 headlines.py ```
 
 # Rules to be added as a pass through
 1. The site must use Y2K or Frutiger Aero, or a sub aethetic of Y2K or Frutiger Aero web design

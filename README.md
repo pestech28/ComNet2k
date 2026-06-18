@@ -6,6 +6,7 @@
 3. Open in terminal
 4. Run ``` chmod +x ./install.sh ```
 5. Run ``` sudo ./install.sh ```
+6. in a sepperate ttyl or terminal window run ``` cd /var/www/html/live/headlines | sudo python3 headlines.py ```
 
 # Rules to be added as a pass through
 1. The site must use Y2K or Frutiger Aero, or a sub aethetic of Y2K or Frutiger Aero web design
@@ -16,6 +17,8 @@
 This project is a fork of [Frutinet 0.3.0](https://github.com/pestech28/Frutinet/tree/0.3.0)
 
 Websites restored come from [The Wayback Machine](https://web.archive.org)
+
+Heaadlines are from [68k.net](http:/68k.news)
 
 # Restore sites source
 [Nintendo](https://web.archive.org/web/20061222035429/http://www.nintendo.com/home)

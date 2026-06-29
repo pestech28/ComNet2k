@@ -37,5 +37,10 @@ sudo cp sites/headlines.conf /etc/apache2/sites-available/ -f
 sudo a2ensite headlines.conf
 echo "127.0.0.1 headlines.net" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/headlines.tar.gz --overwrite -C /var/www/html/live/headlines
+sudo mkdir /var/www/html/live/time
+sudo cp sites/time.conf /etc/apache2/sites-available/ -f
+sudo a2ensite time.conf
+echo "127.0.0.1 time.net" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/time.tar.gz --overwrite -C /var/www/html/live/time
 sudo systemctl reload apache2
 sudo systemctl restart tinyproxy

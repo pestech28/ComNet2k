@@ -42,5 +42,10 @@ sudo cp sites/time.conf /etc/apache2/sites-available/ -f
 sudo a2ensite time.conf
 echo "127.0.0.1 time.net" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/time.tar.gz --overwrite -C /var/www/html/live/time
+sudo mkdir /var/www/html/live/forecast
+sudo cp sites/forecast.conf /etc/apache2/sites-available/ -f
+sudo a2ensite forecast.conf
+echo "127.0.0.1 forecast.net" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/forecast.tar.gz --overwrite -C /var/www/html/live/forecast
 sudo systemctl reload apache2
 sudo systemctl restart tinyproxy

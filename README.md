@@ -21,6 +21,8 @@ Websites restored come from [The Wayback Machine](https://web.archive.org)
 
 Heaadlines are from [68k.net](http:/68k.news)
 
+Forecast are from [weather.gov](http:/weather.gov)
+
 # Restore sites source
 [Nintendo](https://web.archive.org/web/20061222035429/http://www.nintendo.com/home)
 

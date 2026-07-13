@@ -32,6 +32,11 @@ sudo cp sites/microsoft.conf /etc/apache2/sites-available/ -f
 sudo a2ensite microsoft.conf
 echo "127.0.0.1 microsoft.com" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/restore/microsoft.tar.gz --overwrite -C /var/www/html/restore/microsoft
+sudo mkdir /var/www/html/restore/msn
+sudo cp sites/msn.conf /etc/apache2/sites-available/ -f
+sudo a2ensite msn.conf
+echo "127.0.0.1 msn.com" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/restore/msn.tar.gz --overwrite -C /var/www/html/restore/msn
 sudo mkdir /var/www/html/live/headlines
 sudo cp sites/headlines.conf /etc/apache2/sites-available/ -f
 sudo a2ensite headlines.conf

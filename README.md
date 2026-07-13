@@ -27,3 +27,5 @@ Heaadlines are from [68k.net](http:/68k.news)
 [Apple](https://web.archive.org/web/20040508152412/http://www.apple.com/)
 
 [Microsoft](https://web.archive.org/web/20040828024032/http://www.microsoft.com/)
+
+[MSN](https://web.archive.org/web/20040628081312/http://www.msn.com/)

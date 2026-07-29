@@ -37,6 +37,11 @@ sudo cp sites/msn.conf /etc/apache2/sites-available/ -f
 sudo a2ensite msn.conf
 echo "127.0.0.1 msn.com" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/restore/msn.tar.gz --overwrite -C /var/www/html/restore/msn
+sudo mkdir /var/www/html/restore/cartoonnetwork
+sudo cp sites/cartoonnetwork.conf /etc/apache2/sites-available/ -f
+sudo a2ensite cartoonnetwork.conf
+echo "127.0.0.1 cartoonnetwork.com" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/restore/cartoonnetwork.tar.gz --overwrite -C /var/www/html/restore/cartoonnetwork
 sudo mkdir /var/www/html/live/headlines
 sudo cp sites/headlines.conf /etc/apache2/sites-available/ -f
 sudo a2ensite headlines.conf

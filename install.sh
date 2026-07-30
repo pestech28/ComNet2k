@@ -12,6 +12,8 @@ sudo tar -xvzf www/front.tar.gz --overwrite -C /var/www/html
 sudo mkdir /var/www/html/com
 sudo mkdir /var/www/html/live
 sudo mkdir /var/www/html/restore
+sudo mkdir /var/www/html/redirect
+sudo mkdir /var/www/html/
 sudo cp sites/com.conf /etc/apache2/sites-available/ -f
 sudo a2ensite com.conf
 echo "127.0.0.1 com.net" | sudo tee -a /etc/hosts
@@ -57,5 +59,27 @@ sudo cp sites/forecast.conf /etc/apache2/sites-available/ -f
 sudo a2ensite forecast.conf
 echo "127.0.0.1 forecast.net" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/forecast.tar.gz --overwrite -C /var/www/html/live/forecast
+sudo cp sites/ds.conf /etc/apache2/sites-available/ -f
+sudo a2ensite ds.conf
+echo "127.0.0.1 ds.com" | sudo tee -a /etc/hosts
+sudo cp sites/nintendods.conf /etc/apache2/sites-available/ -f
+sudo a2ensite nintendods.conf
+echo "127.0.0.1 nintendods.com" | sudo tee -a /etc/hosts
+sudo cp sites/nintendowii.conf /etc/apache2/sites-available/ -f
+sudo a2ensite nintendowii.conf
+echo "127.0.0.1 nintendowii.com" | sudo tee -a /etc/hosts
+sudo cp sites/wii.conf /etc/apache2/sites-available/ -f
+sudo a2ensite wii.conf
+echo "127.0.0.1 wii.con" | sudo tee -a /etc/hosts
+sudo cp sites/gamecube.conf /etc/apache2/sites-available/ -f
+sudo a2ensite gamecube.conf
+echo "127.0.0.1 gamecube.com" | sudo tee -a /etc/hosts
+sudo cp sites/windowsxp.conf /etc/apache2/sites-available/ -f
+sudo a2ensite windowsxp.conf
+echo "127.0.0.1 windowsxp.com" | sudo tee -a /etc/hosts
+sudo cp sites/ipod.conf /etc/apache2/sites-available/ -f
+sudo a2ensite ipod.conf
+echo "127.0.0.1 ipod.com" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/redirect.tar.gz --overwrite -C /var/www/html/live/redirect
 sudo systemctl reload apache2
 sudo systemctl restart tinyproxy

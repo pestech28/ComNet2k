@@ -13,12 +13,22 @@ sudo mkdir /var/www/html/com
 sudo mkdir /var/www/html/live
 sudo mkdir /var/www/html/restore
 sudo mkdir /var/www/html/redirect
-sudo mkdir /var/www/html/
 sudo cp sites/com.conf /etc/apache2/sites-available/ -f
 sudo a2ensite com.conf
 echo "127.0.0.1 com.net" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/com.tar.gz --overwrite -C /var/www/html/com
 sudo mkdir /var/www/html/com/pub
+sudo mkdir /var/www/html/mobile
+sudo mkdir /var/www/html/mobile/apple
+sudo mkdir /var/www/html/mobile/microsoft
+sudo mkdir /var/www/html/mobile/msn
+sudo cp sites/mobile.conf /etc/apache2/sites-available/ -f
+sudo a2ensite mobile.conf
+echo "127.0.0.1 mobile.net" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/mobile.tar.gz --overwrite -C /var/www/html/mobile
+sudo tar -xvzf www/restore/apple.tar.gz --overwrite -C /var/www/html/mobile/apple
+sudo tar -xvzf www/restore/microsoft.tar.gz --overwrite -C /var/www/html/mobile/microsoft
+sudo tar -xvzf www/restore/msn.tar.gz --overwrite -C /var/www/html/mobile/msn
 sudo mkdir /var/www/html/restore/nintendo
 sudo cp sites/nintendo.conf /etc/apache2/sites-available/ -f
 sudo a2ensite nintendo.conf
@@ -59,6 +69,11 @@ sudo cp sites/forecast.conf /etc/apache2/sites-available/ -f
 sudo a2ensite forecast.conf
 echo "127.0.0.1 forecast.net" | sudo tee -a /etc/hosts
 sudo tar -xvzf www/forecast.tar.gz --overwrite -C /var/www/html/live/forecast
+sudo mkdir /var/www/html/live/google
+sudo cp sites/google.conf /etc/apache2/sites-available/ -f
+sudo a2ensite google.conf
+echo "127.0.0.1 google.com" | sudo tee -a /etc/hosts
+sudo tar -xvzf www/google.tar.gz --overwrite -C /var/www/html/live/google
 sudo cp sites/ds.conf /etc/apache2/sites-available/ -f
 sudo a2ensite ds.conf
 echo "127.0.0.1 ds.com" | sudo tee -a /etc/hosts
